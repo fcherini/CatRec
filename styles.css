@@ -1,0 +1,209 @@
+:root {
+  --primary: rgb(196, 213, 255);
+  --secondary: rgb(100, 143, 117);
+  --dark: rgb(24, 40, 66);
+  --font: "Inter", sans-serif;
+}
+
+/** GLOBAL **/
+
+.container::-webkit-scrollbar {
+  width: 0px; /* width of the entire scrollbar */
+}
+
+.container {
+  height: 80vh;
+  width: 25vw;
+  padding: 20px;
+  position: absolute;
+  left: 37vw;
+  top: 10vh;
+  font-family: var(--font);
+  box-sizing: border-box;
+  overflow: scroll;
+  border: 3px solid rgb(231, 231, 231);
+  border-radius: 14px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text__20px {
+  font-size: 20px;
+  margin: 0;
+}
+
+.text__16px {
+  font-size: 16px;
+  margin: 0;
+}
+
+.text__14px {
+  font-size: 14px;
+  margin: 0;
+}
+
+.text__12px {
+  font-size: 14px;
+  margin: 0;
+}
+
+.text__10px {
+  font-size: 10px;
+  margin: 0;
+}
+
+.text__500 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.text__600 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.text__700 {
+  font-weight: 700;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.card {
+  background-color: var(--primary);
+  padding: 16px 20px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.card__left {
+  border-radius: 24px 24px 24px 0px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: right;
+}
+.card__right {
+  border-radius: 24px 0px 24px 24px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: left;
+}
+
+/** NAVEGACAO TOPO **/
+.top__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.logo__title {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.logo__title__text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/** CARD NOTIFICAÇ˜AO COLETA **/
+
+.absolute__icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -10px;
+  left: -10px;
+  color: var(--dark);
+}
+
+/** RANKING **/
+.ranking__card {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+.ranking__esquerda,
+.ranking__direita {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nome__usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.posicao__usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/** METAS DIARIAS **/
+.metas__diarias {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+.lista__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+/** CURIOSIDADES DO DIA **/
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.leia__mais {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--secondary);
+  border-radius: 100px;
+  padding: 6px 24px;
+}
+
+/** BOTTOM MENU **/
+.bottom__menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 0;
+  position: sticky;
+  z-index: 100;
+  bottom: -30px;
+}

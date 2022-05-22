@@ -1,75 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  
-    <div id="logo_menuconf">
-        <img src="icone_logo.svg">
-        <text>CatRec</text>
-        <button><img src="3PontinhosMenu.svg"></button>
-    </div>
-
-    <div>
-        <img src="IconeInformacao.svg">
-        <h3>Hoje às 19h haverá a coleta seletiva na sua rua, não esqueça de colocar o lixo para fora</h3>
-    </div>
-
-    <div>
-        <h1>Ranking</h1>
-        <div>
-        <img src="FotoIconeMariaLuiza.svg">
-        <h3>Maria Luiza</h3>
-        <h4>Posição #4</h4>
-        <h6>1027</h6>
-        <h6>107 do 3º lugar</h6>
-    </div>
-
-    <div>
-        <h3>#1</h3><img src="FotoIconeEduarda.svg"><h3>Eduarda</h3><h6>1283</h6>
-        <h5>#2</h5><img src="FotoIconeRogerio.svg"><h4>Eduarda</h4><h6>1283</h6>
-        <h5>#3</h5><img src="FotoIconePaloma.svg"><h4>Eduarda</h4><h6>1283</h6>
-    </div>
-
-    <div>
-        <h1>Metas Diárias</h1>
-        <input type="checkbox"><h3>Separar papéis de rascunhos</h3>
-        <input type="checkbox"><h3>Lavar embalagens</h3>
-    </div>
-
-    <div>
-        <h1>Curiodidades do dia</h1>
-        <div>
-        <div>
-            <h1>Somente 3% do lixo reciclável é reciclado</h1>
-            <h3>Separando e preparando os materiais para descarte corretamente, podemos aumentar esse número para 30%.</h3>
-            <button>leia mais</button>
-        </div>
-        <div>
-            <h1>Não há desperdício na reciclagem de vidro</h1>
-            <h3>100% do vidro é reaproveitado. 1kg de vidro reciclado se torna 1kg de vidro novo</h3>
-            <button>leia mais</button>   
-        </div>
-        <div>
-            <h1>Reciclar 1 tonelada de papel economiza 2,5 mil litros de petróleo.</h1>
-            <h3>26,5 mil litros de água e evita que 17 árvores sejam derrubadas.</h3>
-            <button>leia mais</button>   
-        </div>
-        </div>
-    
-        <div id="barra_menu">
-            <a href="pagina_inicial.html"><button><img src="IconeHome.svg"></button></a>
-            <a href="pesquisa.html"><button><img src="IconePesquisa.svg"></button></a>
-            <a href="dashboard.html"><button><img src="IconeDashboard.svg"></button></a>
-            <a href="mapa.html"><button><img src="IconeMapa.svg"></button></a>
-            <a href="perfil_usuario.html"><button><img src="IconePerfil.svg"></button></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatRec</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--- TOP MENU --->
+      <div class="top__menu">
+        <div class="logo__title">
+          <img src="icone_logo.svg" />
+          <text class="logo__title__text">CatRec</text>
         </div>
 
+        <button><img src="3PontinhosMenu.svg" /></button>
+      </div>
+      <div class="conteudo">
+        <!--- NOTIFICACAO COLETA --->
+        <div class="card">
+          <img src="IconeInformacao.svg" class="absolute__icon" />
+          <p class="text__16px">
+            Hoje às 19h haverá a coleta seletiva na sua rua, não esqueça de
+            colocar o lixo para fora
+          </p>
+        </div>
+        <!--- RANKING --->
+        <div class="ranking__content">
+          <h1>Ranking</h1>
+          <div class="ranking__card card">
+            <div class="ranking__esquerda">
+              <div class="nome__usuario">
+                <img src="FotoIconeMariaLuiza.svg" />
+                <p class="text__16px text__500">Maria Luiza</p>
+              </div>
+              <div class="posicao__usuario">
+                <p class="text__14px text__500">
+                  <span class="text__700">Posição</span> #4
+                </p>
+                <p class="text__10px text__500">1027</p>
+              </div>
+              <p class="text__10px text__500">107 do 3º lugar</p>
+            </div>
+
+            <div class="ranking__direita">
+              <div class="nome__usuario">
+                <p class="text__16px text__500">#1</p>
+                <img src="FotoIconeEduarda.svg" />
+                <p class="text__16px text__500">Eduarda</p>
+                <p class="text__10px text__500">1283</p>
+              </div>
+              <div class="nome__usuario">
+                <p class="text__12px text__500">#2</p>
+                <img src="FotoIconeRogerio.svg" />
+                <p class="text__14px text__500">Rogério</p>
+                <p class="text__10px text__500">1239</p>
+              </div>
+              <div class="nome__usuario">
+                <p class="text__12px text__500">#3</p>
+                <img src="FotoIconePaloma.svg" />
+                <p class="text__14px text__500">Paloma</p>
+                <p class="text__10px text__500">1134</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--- METAS DIARIAS --->
+        <div class="metas__content">
+          <h1>Metas Diárias</h1>
+          <div class="metas__diarias">
+            <div class="lista__item">
+              <input type="checkbox" />
+              <p class="text__16px">Separar papéis de rascunhos</p>
+            </div>
+            <div class="lista__item">
+              <input type="checkbox" />
+              <p class="text__16px">Lavar embalagens</p>
+            </div>
+          </div>
+        </div>
+        <!--- CURIOSIDADES DO DIA --->
+        <div id="curiosidade__content">
+          <h1>Curiodidades do dia</h1>
+          <div class="curiosidades">
+            <div class="curiosidade__card card card__right">
+              <p class="text__20px text__600">
+                Somente 3% do lixo reciclável é reciclado
+              </p>
+              <p class="text__16px">
+                Separando e preparando os materiais para descarte corretamente,
+                podemos aumentar esse número para 30%.
+              </p>
+              <button class="leia__mais">leia mais</button>
+            </div>
+            <div class="card card__left">
+              <p class="text__20px text__600">
+                Não há desperdício na reciclagem de vidro
+              </p>
+              <p class="text_16px">
+                100% do vidro é reaproveitado. 1kg de vidro reciclado se torna
+                1kg de vidro novo
+              </p>
+              <button class="leia__mais">leia mais</button>
+            </div>
+            <div class="card card__right">
+              <p class="text__20px text__600">
+                Reciclar 1 tonelada de papel economiza 2,5 mil litros de
+                petróleo.
+              </p>
+              <p class="text_16px">
+                26,5 mil litros de água e evita que 17 árvores sejam derrubadas.
+              </p>
+              <button class="leia__mais">leia mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="bottom__menu">
+          <a href="pagina_inicial.html"
+            ><button><img src="IconeHome.svg" /></button
+          ></a>
+          <a href="pesquisa.html"
+            ><button><img src="IconePesquisa.svg" /></button
+          ></a>
+          <a href="dashboard.html"
+            ><button><img src="IconeDashboard.svg" /></button
+          ></a>
+          <a href="mapa.html"
+            ><button><img src="IconeMapa.svg" /></button
+          ></a>
+          <a href="perfil_usuario.html"
+            ><button><img src="IconePerfil.svg" /></button
+          ></a>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
